@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma - Esportes e Moda</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .logo {
+            width: 150px; /* Tamanho da logo */
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            color: #ffd700; /* Dourado ao passar o mouse */
+        }
+
+        .banner img {
+            width: 100%;
+            display: block;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .products {
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .products h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover {
+            transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #000;
+        }
+
+        .product p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .product .price {
+            font-size: 1.2rem;
+            color: #000;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Logo da Puma -->
+            <img src="puma-logo-cover.png" alt="Logo Puma" class="logo">
+            <h1>Esportes e Moda</h1>
+        </div> 
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#">Início</a>
+            <a href="#">Homem</a>
+            <a href="#">Mulher</a>
+            <a href="#">Criança</a>
+            <a href="#">Lançamentos</a>
+        </div>
+    </nav>
+
+    <!-- Banner abaixo da navbar -->
+    <div class="banner">
+        <img src="NeymarJr-9.jpg" alt="Banner Promocional">
+    </div>
+
+
+    <section class="products">
+        <div class="container">
+            <h2>Destaques</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="png.avif" alt="Tênis Puma">
+                    <h3>Tênis Puma RS-X</h3>
+                    <p>Tênis esportivo com design moderno e conforto incomparável.</p>
+                    <p class="price">R$ 399,90</p>
+                </div>
+                <div class="product">
+                    <img src="camiseta_puma_masculina_657933_3101_1_eb700056245daec8f896d0491514754c.webp" alt="Camiseta Puma">
+                    <h3>Camiseta DryCell</h3>
+                    <p>Camiseta tecnológica para máxima performance.</p>
+                    <p class="price">R$ 129,90</p>
+                </div>
+                <div class="product">
+                    <img src="2I3-9639-006_zoom1.webp" alt="Moletom Puma">
+                    <h3>Moletom Puma</h3>
+                    <p>Moletom confortável e estiloso para o dia a dia.</p>
+                    <p class="price">R$ 199,90</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Puma. Todos os direitos reservados. | <a href="#">Política de Privacidade</a></p>
+        </div>
+    </footer>
+</body>
+</html>
